@@ -1,8 +1,8 @@
-/*
-Tag Elements
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Khula:wght@300&family=Roboto+Condensed:wght@500&display=swap');
+
+/*
+Main Elements
+*/
 
 html {
     font-size: 1em;
@@ -10,15 +10,11 @@ html {
 }
 
 body {
-    background-color: rgb(134, 112, 112);
+    background-color: rgb(242, 240, 235);
     margin: 0;
     
 }
 
-h1 {
-    font-size: 4em;
-    font-family: 'DM Serif Display', serif;
-}
 
 
 
@@ -32,6 +28,7 @@ Flex Containers
     align-items: center;
     gap: 2rem;
     background-color: rgb(242, 240, 235);
+    border-bottom: 1.5px solid black;
 
 }
 
@@ -39,9 +36,11 @@ Flex Containers
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-around;
-    gap: 3rem;
-    background-color: aquamarine;
+    justify-content: space-evenly;
+    margin: auto 5%;
+    
+    
+    background-color: rgb(242, 240, 235);
 
 }
 
@@ -49,10 +48,10 @@ Flex Containers
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
-    gap: 2rem;
+    height: 20rem;
 
 
-    background-color:red;
+    background-color:violet;
 }
 
 .links-container {
@@ -84,13 +83,27 @@ Flex Items
 }
 
 .flex-box-paragraph {
-    background-color: bisque;
-    width: 10rem;
+    background-color:rgb(242, 240, 235);
+    width: 30rem;
+    height: 30rem;
+   
+}
+
+.flex-box-paragraph-illustration {
+    background-color:red;
+    width: 40rem;
     height: 10rem;
-    margin: 4rem;
+   
 }
 
 .flex-box-picture {
+    background-color: azure;
+    width: 30rem;
+    height: 30rem;
+    
+}
+
+.flex-box-picture-ad {
     background-color: azure;
     width: 10rem;
     height: 10rem;
@@ -121,6 +134,12 @@ Flex Items
 /*
 Text Styling
 */
+
+h1 {
+    font-size: 4em;
+    font-family: 'DM Serif Display', serif;
+}
+
 
 .title-text {
     font-family: 'DM Serif Display', serif;
@@ -163,6 +182,10 @@ Image Styling
     height: 100px;
 }
 
+.img-cup {
+    width: 30rem;
+    height: 30rem;
+}
 
 
 /*
