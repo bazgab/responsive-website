@@ -1,0 +1,81 @@
+/*
+Tag Elements
+*/
+html {
+    font-size: 1em;
+    
+}
+
+body {
+    background-color: rgb(134, 112, 112);
+    margin: 0;
+    
+}
+
+h1 {
+    font-size: 4em;
+}
+
+
+
+/*
+Flex Containers
+*/
+
+.nav-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 2rem;
+    
+    
+
+
+    background-color: blue;
+
+}
+
+
+/*
+Flex Items
+*/
+.flex-button {
+    background-color: red;
+    margin: 1rem;
+    
+}
+
+
+/*
+Text Styling
+*/
+
+
+
+/*
+Image Styling
+*/
+
+
+
+
+
+/*
+Color Palette
+*/
+
+
+
+/* Media Queries */
+
+@media all and (max-width: 800px) {
+    .nav-container {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .nav-container {
+        justify-content: column;
+    }
+}
