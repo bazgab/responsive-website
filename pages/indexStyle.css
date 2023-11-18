@@ -15,9 +15,18 @@ body {
     
 }
 
+.link-warm {
+    text-decoration: none !important;
+    color: rgb(242, 240, 235);
+    
+    
+}
 
-
-
+.link-green {
+    text-decoration: none !important;
+    color: rgb(30, 57, 50);
+    
+}
 /*
 Flex Containers
 */
@@ -35,23 +44,31 @@ Flex Containers
  .two-column-container {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: auto 5%;
+    align-items: normal;
+    justify-content:center;
+    align-content: normal;
+   
+    height: 30rem;
     
     
     background-color: rgb(242, 240, 235);
 
 }
 
+
 .one-column-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
-    height: 20rem;
+    
+   
+    height: 30rem;
 
 
-    background-color:violet;
+
+    background-image: url('/assets/coffee-illustration-1.png');
+    background-size: 110%;
+    background-position:0% 100%;
 }
 
 .links-container {
@@ -83,23 +100,28 @@ Flex Items
 }
 
 .flex-box-paragraph {
-    background-color:rgb(242, 240, 235);
-    width: 30rem;
-    height: 30rem;
+    background-color:rgb(85, 62, 3);
+    width: 40rem;
+    height: 40rem;
+    text-align: center;
+   
    
 }
 
 .flex-box-paragraph-illustration {
-    background-color:red;
+    background-color: rgb(242, 240, 235);
     width: 40rem;
-    height: 10rem;
+    height: 20rem;
+    margin: 2rem;
+    border-radius: 0.8rem;
+    padding: 2rem;
    
 }
 
 .flex-box-picture {
     background-color: azure;
-    width: 30rem;
-    height: 30rem;
+    width:40rem;
+    height: 40rem;
     
 }
 
@@ -131,25 +153,78 @@ Flex Items
     margin: 1rem;
 }
 
+/* Buttons  */
+
+
+.button-quiz {
+    background: rgb(30, 57, 50);
+    border: 2px solid rgb(30, 57, 50);
+    border-radius: 0.5rem;
+    
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Khula', sans-serif;
+    font-size: 1rem;
+    
+    
+    
+    
+    outline: 0;
+    padding: 0.3rem 1rem;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    text-decoration: none;
+  }
+  
+  .button-quiz:hover,
+  .button-quiz:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: rgb(30, 57, 50);
+    
+  }
+  
+  .button-quiz:active {
+    opacity: .5;
+  }
+  
+  
+
 /*
 Text Styling
 */
 
 h1 {
-    font-size: 4em;
     font-family: 'DM Serif Display', serif;
 }
 
 
 .title-text {
-    font-family: 'DM Serif Display', serif;
-    font-size: 2rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 4rem;
 
 }
 
-.body-text {
+.body-text-large {
     font-family: 'Khula', sans-serif;
     font-size: 2rem;
+}
+
+.body-text-medium {
+    font-family: 'Khula', sans-serif;
+    font-size: 1.5rem;
+}
+
+.body-text-small {
+    font-family: 'Khula', sans-serif;
+    font-size: 1rem;
 }
 
 .impact-text {
@@ -158,6 +233,18 @@ h1 {
     font-weight: 300;
     letter-spacing: 1.5px;
     transform: scale(1, 0.85);
+}
+
+.green-text {
+    color: rgb(0, 98, 65);
+}
+
+.darkgreen-text {
+    color: rgb(30, 57, 50);
+}
+
+.white-text {
+    color: white;
 }
 
 /*
@@ -183,10 +270,14 @@ Image Styling
 }
 
 .img-cup {
-    width: 30rem;
-    height: 30rem;
+    width: 40rem;
+    height: 40rem;
 }
 
+.img-ad {
+    width: 40rem;
+    height: 40rem;
+}
 
 /*
 Color Palette
@@ -207,6 +298,12 @@ Color Palette
     cursor: pointer;
 }
 
+
+
+.link:hover {
+    color: rgb(30, 57, 50);
+}
+
 /* Media Queries */
 
 @media all and (max-width: 800px) {
@@ -220,3 +317,15 @@ Color Palette
         justify-content: column;
     }
 }
+ /*
+@media all and (max-width: 1060px) {
+    .flex-box-picture {
+        margin: 2rem;
+        align-self: flex-end;
+    }
+    .flex-box-paragraph {
+        margin: 2rem;
+        align-self: flex-start;
+    }
+ }
+
