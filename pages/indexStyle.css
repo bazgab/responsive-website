@@ -43,7 +43,7 @@ Flex Containers
 
  .two-column-container {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     align-items: normal;
     justify-content:center;
     align-content: normal;
@@ -207,7 +207,7 @@ h1 {
 
 
 .title-text {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'DM Serif Display', serif;
     font-size: 4rem;
 
 }
@@ -269,15 +269,6 @@ Image Styling
     height: 100px;
 }
 
-.img-cup {
-    width: 40rem;
-    height: 40rem;
-}
-
-.img-ad {
-    width: 40rem;
-    height: 40rem;
-}
 
 /*
 Color Palette
@@ -328,4 +319,88 @@ Color Palette
         align-self: flex-start;
     }
  }
+
+
+/* Column Layout  */
+
+.column-one {
+    column-count: 2;
+    
+    margin: 15rem;
+    
+}
+
+.container-one {
+    background-color: rgb(214, 208, 194);
+    width: 40rem;
+    height: 30rem;
+    border-radius: 0.5rem;
+
+}
+
+.container-no-bg {
+    background-color:/*rgb(242, 240, 235)*/ red;
+    width: 40rem;
+    height: 30rem;
+    border-radius: 0.5rem;
+
+}
+
+.card {
+    background-color: rgb(214, 208, 194);
+    margin: 0.5rem 2rem;
+    display: inline-block;
+    width: 38rem;
+    height: 25rem;
+    
+}
+
+.card-no-bg {
+    background-color: /*rgb(242, 240, 235)*/ red;
+    margin: 0.5rem 2rem;
+    display: inline-block;
+    width: 38rem;
+    height: 25rem;
+    
+}
+
+.container-cup-image {
+    background-image: url('/assets/cup-design-1.png');
+    width: 40rem;
+    height: 30rem;
+    background-size: cover;
+    background-position: 10%;
+    border-radius: 0.5rem;
+}
+
+
+.container-x-image {
+    background-image: url('/assets/cup-design-1.png');
+    width: 40rem;
+    height: 30rem;
+    background-size: cover;
+    background-position: 10%;
+    border-radius: 0.5rem;
+}
+
+.container-ad-image {
+    background-image: url('/assets/ad-image-1.png');
+    width: 40rem;
+    height: 30rem;
+    background-size: cover;
+    background-position: 50% 25%;
+    border-radius: 0.5rem;
+    
+}
+
+@media all and (max-width: 1582px) {
+    .column-one {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin: 0;
+        gap: 1rem;
+        margin: 1rem;
+    }
+}
 
