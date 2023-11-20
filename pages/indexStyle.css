@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Khula:wght@300&family=Roboto+Condensed:wght@500&display=swap');
 
 
-
-
-
 /*
 Main Elements
 */
@@ -92,7 +89,7 @@ Flex Containers
     flex-flow: row wrap;
     justify-content: flex-start;
 
-    background-color: rgb(20, 39, 34);
+    background-color: rgb(10, 19, 16);
 }
 
 
@@ -167,8 +164,9 @@ Flex Items
 .social-media-icons {
     width: 2rem;
     height: 2rem;
-    margin: 0.25rem;
     
+    margin-top: 1.25rem;
+    color: rgb(20, 39, 34);
     text-align: center;
     text-decoration: none;
     
@@ -275,18 +273,6 @@ h1 {
     color: white;
 }
 
-/*
-typography so far: 
- body: khula
- titles: DM Serif Display
- impact: Roboto Condensed
-
-font-family: 'DM Serif Display', serif;
-font-family: 'Khula', sans-serif;
-font-family: 'Roboto Condensed', sans-serif;
-
-
-*/
 
 /*
 Image Styling
@@ -298,17 +284,6 @@ Image Styling
 }
 
 
-/*
-Color Palette
-*/
-
-/*
-    green: rgb(0, 98, 65)
-    dark green: rgb(30, 57, 50)
-    warm: rgb(242, 240, 235)
-    terra-cota: rgb(157, 81, 22)
-    orange: rgb(228, 76, 44)
-*/
 
 /* Transitions & Animations  */
 
@@ -317,7 +292,13 @@ Color Palette
     cursor: pointer;
 }
 
+.social-media-icons:hover {
+    color: rgb(242, 240, 235);
+}
 
+.flex-icons:hover {
+    background-color: rgb(30, 57, 50);
+}
 
 .link:hover {
     color: rgb(30, 57, 50);
@@ -340,14 +321,6 @@ Color Palette
         justify-content: column;
     }
 }
- /*
-@media all and (max-width: 994px) {
-    .flex-box-paragraph-illustration {
-        height: auto;
-        width: 20rem;
-    }
-}
-*/
 
 @media all and (max-width: 1154px) {
     .one-column-container {
@@ -380,6 +353,23 @@ Color Palette
     
 }
 
+.column-one-card-color {
+    column-count: 2;
+    background-color:rgb(214, 208, 194);
+    margin: 1rem 10rem;
+    border-radius: 0.5rem;
+    
+}
+
+.container-title {
+    background-color: rgb(214, 208, 194);
+    width: 98rem;
+    height: 8rem;
+    border-radius: 0.5rem;
+    margin: 2rem 2rem 1rem 10rem;
+    padding: 1rem;
+}
+
 .container-one {
     background-color: rgb(214, 208, 194);
     width: 40rem;
@@ -396,6 +386,13 @@ Color Palette
 
 }
 
+.container-card-color {
+    background-color: rgb(214, 208, 194);
+    width: 40rem;
+    height: 30rem;
+    border-radius: 0.5rem;
+
+}
 .card {
     background-color: rgb(214, 208, 194);
     margin: 0.5rem 2rem;
@@ -465,4 +462,32 @@ Color Palette
         margin: 1rem;
         background-color: rgb(242, 240, 235);
     }
+    .column-one-card-color {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem;
+        background-color: rgb(242, 240, 235);
+    }
+   
+}
+ @media all and (max-width: 1900px) {
+    .container-title {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+    }
+ }
+
+/* Template Page */
+
+.container-big {
+    background-color: rgb(214, 208, 194);
+    width: 80rem;
+    height: 20rem;
+    margin: 3rem 3rem 3rem 30rem;
+    border-radius:0.5rem
+
 }
