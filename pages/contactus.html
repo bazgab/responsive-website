@@ -25,23 +25,31 @@
         <!--Container Title-->
 
         <div class="container-title">
-            <h1 class="title-text darkgreen-text"> </h1>
+            <h1 class="title-text darkgreen-text">Contact Us</h1>
         </div>
 
         <!--Container Main-->
-        <div class="column-one-card-color">
-            <div class="container-card-color">
-                <div class="card">
-                   
-                </div>
-            </div>
-            <div class="container-card-color">
-                <div class="card">
-                    
-
-                </div>
-            </div>
-        </div>
+        <div class="container-form">
+            <form action="index.html">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+            </form>
+          </div>
         
         <div class="links-container">
             <a class="flex-box-links body-text-small white-text" href="/pages/aboutus.html">About Us</a>
