@@ -393,6 +393,16 @@ Image Styling
     border-radius: 0.5rem;
 
 }
+
+.container-card-color-club {
+    background-color: rgb(214, 208, 194);
+    width: 45rem;
+    height: 38rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+
+}
+
 .card {
     background-color: rgb(214, 208, 194);
     margin: 0.5rem 2rem;
@@ -413,6 +423,17 @@ Image Styling
     padding: 1rem;
     
 }
+
+.card-club {
+    background-color: rgb(214, 208, 194);
+    margin: 0.5rem 3rem;
+    display: inline-block;
+    width: 38rem;
+    height: 35rem;
+    padding: 1rem;
+    
+}
+
 
 .card-no-bg {
     background-color: /*rgb(242, 240, 235)*/ white;
@@ -504,6 +525,11 @@ Image Styling
 
 }
 
+.container-club-bg {
+    background-image: url('/assets/frappe-big.png');
+    width: auto;
+    height: 42rem;
+}
 
 /* Scroll Button  */
 
