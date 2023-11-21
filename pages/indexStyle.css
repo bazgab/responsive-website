@@ -39,7 +39,6 @@ Flex Containers
     gap: 2rem;
     background-color: rgb(242, 240, 235);
     border-bottom: 1.5px solid black;
-
 }
 
  .two-column-container {
@@ -165,8 +164,8 @@ Flex Items
     width: 2rem;
     height: 2rem;
     
-    margin-top: 1.25rem;
-    color: rgb(20, 39, 34);
+    margin-top: 0.25rem;
+    justify-content: center;
     text-align: center;
     text-decoration: none;
     
@@ -297,7 +296,8 @@ Image Styling
 }
 
 .flex-icons:hover {
-    background-color: rgb(30, 57, 50);
+    background-color: rgb(174, 196, 157);
+   
 }
 
 .link:hover {
@@ -491,3 +491,27 @@ Image Styling
     border-radius:0.5rem
 
 }
+
+
+/* Scroll Button  */
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: rgb(20, 39, 34);
+    color: white;
+    cursor: pointer;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
