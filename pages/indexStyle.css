@@ -397,8 +397,20 @@ Image Styling
     background-color: rgb(214, 208, 194);
     margin: 0.5rem 2rem;
     display: inline-block;
+    width: 35rem;
+    height: 25rem;
+    text-align: justify;
+    
+    
+}
+
+.card-color {
+    background-color: rgb(214, 208, 194);
+    margin: 0.5rem 2rem;
+    display: inline-block;
     width: 38rem;
     height: 25rem;
+    padding: 1rem;
     
 }
 
